@@ -21,7 +21,7 @@ $(document).ready(function () {
   }
 
   function getLocalInfo() {
-    for (var i = 9; i < 12; i++) {
+    for (var i = 8; i < 18; i++) {
       var hour = localStorage.getItem('hour-' + i)
       var timeBlock = $('#hour-' + i)
       timeBlock.children().eq(1).val(hour)
@@ -41,7 +41,7 @@ $(document).ready(function () {
     }
 
   }
-  console.log(localStorage);
+  
   getLocalInfo();
   saveBtn.on("click", clicked);
 
@@ -56,7 +56,7 @@ $(document).ready(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  // TODO: Add code to display the current date in the header of the page.
+  // display the current date in the header of the page.
 
   $("#currentDay").text(curDate.format('dddd, MMM-D-YYYY, h:mm a'));
 });
